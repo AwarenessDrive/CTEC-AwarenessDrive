@@ -1,0 +1,11 @@
+build.xml
+.settings/*
+.project
+ReadmePhing.txt
+.externalToolBuilders/*
+.externalToolBuilders
+.git/*
+.buildpath
+build.*
+sync.exclude
+sync.properties

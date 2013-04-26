@@ -1,0 +1,6 @@
+sync.source.projectdir=.
+sync.destination.projectdir=~/www/sb/test
+sync.remote.host=shamesite.org
+sync.remote.user=shamesit
+sync.destination.backupdir=~/rsync-backup/sb
+sync.exclude.file=sync.exclude

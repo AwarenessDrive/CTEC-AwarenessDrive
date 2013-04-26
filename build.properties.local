@@ -1,0 +1,5 @@
+sync.source.projectdir=.
+sync.destination.projectdir=/srv/www/htdocs/sb/ad
+sync.destination.backupdir=/var/tmp/ad-backup
+sync.destination.backupdir=false
+sync.exclude.file=sync.exclude

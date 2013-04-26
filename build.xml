@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id$ -->
+ <!-- using rsync based file sync in phing -->
+ <project name="AwarenessDrive.org" basedir="." default="sync">
+<!-- Public targets -->
+<target name="sync" description="Copy files to local server">
+  <phingcall target="-sync-execute-task">
+    <property name="listonly" value="false" />
+  	<property file="build.properties.local" />
+  </phingcall>
+</target>
+
+<target name="sync:list" description="List files on local server">
+  <phingcall target="-sync-execute-task">
+    <property name="listonly" value="true" />
+    <property name="sync.verbose" value="true" override="true" />
+  	<property file="build.properties.local" />
+  </phingcall>
+</target>
+<!-- Sandbox on production server -->
+<target name="sync-sandbox" description="Copy files to sandbox">
+  <phingcall target="-sync-execute-task">
+    <property name="listonly" value="false" />
+  	<property file="build.properties.sandbox" />
+  </phingcall>
+</target>
+<target name="sync-sandbox:list" description="List files on sandbox">
+  <phingcall target="-sync-execute-task">
+    <property name="listonly" value="true" />
+    <property name="sync.verbose" value="true" override="true" />
+  	<property file="build.properties.sandbox" />
+  </phingcall>
+</target>
+
+<!-- Production server -->
+<target name="sync-remote" description="Copy files to sandbox">
+  <phingcall target="-sync-execute-task">
+    <property name="listonly" value="false" />
+  	<property file="build.properties" />
+  </phingcall>
+</target>
+<target name="sync-remote:list" description="List files on sandbox">
+  <phingcall target="-sync-execute-task">
+    <property name="listonly" value="true" />
+    <property name="sync.verbose" value="true" override="true" />
+  	<property file="build.properties" />
+  </phingcall>
+</target>
+
+<!-- Private targets -->
+<target name="-init" description="Load main settings">
+  <tstamp>
+  	<format property="sync.nowtime" pattern="%Y%m%d%H%M"  />
+  </tstamp>
+</target>
+
+<target name="-sync-execute-task" depends="-init">
+  <if>
+ 	 <equals arg1="${sync.destination.backupdir}" arg2="false" />
+ 	 <then>
+	  <property name="sync.destination.backupdirx" value="false" override="true" />
+ 	 </then>
+ 	 <else>
+	  <property name="sync.destination.backupdirx" value="${sync.destination.backupdir}/${sync.nowtime}" override="true" />
+ 	 </else>
+  </if>
+  <property file="sync.properties" />
+  <if>
+    <not>
+      <isset property="sync.verbose" />
+    </not>
+    <then>
+      <property name="sync.verbose" value="true" override="true" />
+      <echo message="The value of sync.verbose has been set to true" />
+    </then>
+  </if>
+  <if>
+    <not>
+      <isset property="sync.options" />
+    </not>
+    <then>
+      <property name="sync.options" value="-rpza" override="true" />
+      <echo message="The value of sync.options has been set to ${sync.options}" />
+    </then>
+  </if>
+  <if>
+      <isset property="sync.remote.host" />
+    <then>
+      <property name="sync.remote.auth" value="${sync.remote.user}@${sync.remote.host}:" override="true" />
+    </then>
+    <else>
+      <property name="sync.remote.auth" value="" override="true" />
+    </else>
+  </if>
+  <property name="sync.destination.dir" value="${sync.remote.auth}${sync.destination.projectdir}" />
+  <taskdef name="sync" classname="phing.tasks.ext.FileSyncTask" />
+  <if>
+ 	 <equals arg1="${sync.destination.backupdir}" arg2="false" />
+ 	 <then>
+		  <sync
+		    sourcedir="${sync.source.projectdir}"
+		    destinationdir="${sync.destination.dir}"
+		    excludefile="${sync.exclude.file}"
+		    dryRun="${listonly}"
+		    verbose="${sync.verbose}"
+		    options="${sync.options}" />
+ 	 </then>
+ 	 <else>
+		  <property name="sync.destination.backupdirx" value="${sync.destination.backupdir}/${sync.nowtime}" override="true" />
+		  <sync
+		    sourcedir="${sync.source.projectdir}"
+		    destinationdir="${sync.destination.dir}"
+		    backupdir="${sync.destination.backupdirx}"
+		    excludefile="${sync.exclude.file}"
+		    dryRun="${listonly}"
+		    verbose="${sync.verbose}"
+		    options="${sync.options}" />
+ 	 </else>
+  </if>
+</target>
+<property name="version" value="1.0" />
+
+</project>
