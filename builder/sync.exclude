@@ -9,3 +9,4 @@ ReadmePhing.txt
 build.*
 sync.exclude
 sync.properties
+builder/*
