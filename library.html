@@ -1,0 +1,774 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<link rel="stylesheet" type="text/css" href="css/base_styles.css" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+<script src="js/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script src="js/jquery-ui-1.10.0.custom.min.js" type="text/javascript"></script>
+<script src="js/navani.js" type="text/javascript"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>AwarenessDrive.org - BeAware Library</title>
+<style type="text/css">
+body{
+	background-image:url(images/low_contrast_linen.png);	
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.div {
+	border:#f82639 3px solid;
+	padding:20px;
+	height:450px;
+	border:2px solid #fff;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;	
+	box-shadow:0px 0px 10px #fff;
+	-webkit-box-shadow: 0px 0px 15px #fff;
+	-moz-box-shadow:0px 0px 15px #fff;
+	text-shadow:1px 1px 0px #363636;
+	color:#fff;
+	background-color:#111;
+}
+.bookdiv {
+	margin: 15px;
+}
+h2{
+	color:#f82639;
+	text-shadow:2px 2px 4px #000;
+	-moz-text-shadow:2px 2px 4px #000;	
+}
+h3 {
+	color:#f82639;
+	text-shadow:2px 2px 4px #000;
+	-moz-text-shadow:2px 2px 4px #000;	
+	text-align:left;
+}
+.picleft {
+	float:left;
+	margin: 10px;
+	border:#999 3px solid;
+	text-shadow:2px 2px 4px #000;
+	-moz-text-shadow:2px 2px 4px #000;
+	height:217px;
+	width:145px;	
+}
+.picright {
+	float:right;
+	margin: 10px;
+	border:#999 3px solid;
+	text-shadow:2px 2px 4px #000;
+	-moz-text-shadow:2px 2px 4px #000;	
+	height:217px;
+	width:145px;
+}
+.picfeatured {
+	float:left;
+	margin:15px;
+	border:#999 3px solid;
+	text-shadow:2px 2px 4px #000;
+	-moz-text-shadow:2px 2px 4px #000;
+	height:321px;
+	width:215px;
+}
+.booktitle {
+	color:#f82639;
+	text-shadow:2px 2px 2px #000;
+	-moz-text-shadow:2px 2px 2px #000;
+	font-style:italic;
+}
+.authorname {
+	color:#999;
+	text-shadow:1px 1px 2px #000;
+	-moz-text-shadow:1px 1px 2px #000;
+	-webkit-text-shadow:1px 1px 2px #000;
+	font-style:italic;
+}
+.bookdescription {
+	color:#FFF;
+	text-align:left;
+}
+.subbooksWrapper{
+	position:relative;
+	margin:50px auto 100px auto;
+	width:1000px;
+	height:2150px;
+	padding:20px;	
+}
+.subbooksWrapper h3{
+		text-align:left;
+		line-height:10px;
+}
+.subbooks{
+	width:300px;
+	height:500px;
+	float:left;
+	margin:30px 10px;
+	text-align:left;	
+}
+.authorbookLinks{
+
+	scroll:none;
+	float:left;
+	text-align:left;
+	height:300px;	
+	border-top:1px solid #666;
+}
+.headLink a{
+	text-decoration:underline;
+}
+.headLink a:hover{
+	text-decoration:none;
+}
+.subbooks_row1{
+	width:300px;
+	height:500px;
+	float:left;
+	margin:30px 10px;
+	text-align:left;	
+}
+.subbooks_row2{
+	width:300px;
+	height:430px;
+	float:left;
+	margin:30px 10px;
+	text-align:left;	
+}
+.subbooks_row3{
+	width:300px;
+	height:400px;
+	float:left;
+	margin:30px 10px;
+	text-align:left;	
+}
+.subbooks_row4{
+	width:300px;
+	height:400px;
+	float:left;
+	margin:10px 10px;
+	text-align:left;	
+}
+.iconHead{
+	display:block;
+	width:100%;
+	height:30px;
+	padding-top:20px;
+	border-bottom:1px solid #fff;
+	font-weight:bold;
+	font-size:18px;
+	color:#f82639;
+	text-shadow:2px 2px 4px #000;
+	-moz-text-shadow:2px 2px 4px #000;		
+}
+</style>
+</head>
+<body>
+
+
+<div class="headWrapper">
+
+	<div class="logo"><a href="index.html"><img src="images/Header1_750.gif" alt="AwarenessDrive.org" width="570"/></a> </div>
+    
+    <div class="right">
+
+
+      <div class="quick_top">
+            <div class="quick_top_icon" id="twitter"><a href="https://twitter.com/awarenessdrive" target="_blank"><img src="images/twitter_icon.fw.png" alt="Twitter AwarenessDrive.org" width="34" class="opaque-rollover" /></a></div>
+            
+        <div class="quick_top_icon" id="blog"><a href="blog.html"><img src="images/blog_icon.fw.png" alt="BeAware Blog" width="34" class="opaque-rollover" /></a></div>
+            
+        <div class="quick_top_icon" id="books"><a href="library.html"><img src="images/book_icon.fw.png" alt="BeAware Library" width="34" class="opaque-rollover" /></a></div>
+            
+        <div class="quick_top_icon" id="posters"><a href="posters.html"><img src="images/poster_icon.fw.png" alt="BeAware Posters"  width="20" class="opaque-rollover" /></a></div>
+            
+        <div class="quick_top_icon" id="facebook"><a href="https://www.facebook.com/pages/Awarenessdriveorg/581286078548981" target="_blank"><img src="images/facebook_icon.fw.png" alt="Facebook AwarenessDrive.org" width="34" class="opaque-rollover" /></a></div> 
+      </div>
+      
+                  <div class="slogan"><img src="images/Headline_BeAware.gif" alt="BeAware of Zombie Emotions" width="404" height="38" /></div>
+      
+	</div> 
+</div>
+
+
+
+<div id="sidebar">
+    <div id="scroller_anchor"></div>
+    	<div class="nav" id="scroller">
+        
+                <div class="com"><span class="red">AWARENESS</span><span class="grey">drive</span><span class="white">.org</span></div>
+        	<div class="navWrapper">
+        
+                <div class="linkWrapper"><div class="link" id="link1"><a href="index.html">Home</a></div></div>
+               
+               <div class="linkWrapper"><div class="link2"  id="link2" style="visiblity:'visible'"><a href="blog.html">BeAware</a>
+               <div class="drop" id="drop">
+                   <div class="sub1" onclick="location.href='blog.html';"><a href="blog.html">BeAware Blog</a></div>
+                    <div class="sub2" onclick="location.href='library.html';"><a href="library.html">BeAware Library</a></div>
+               </div>
+               </div></div>
+               
+               <div class="linkWrapper"><div class="link"  id="link3"><a href="links.html">Links</a></div></div>
+               
+               <div class="linkWrapper"><div class="link"  id="link4"><a href="events.html">Events</a></div></div>
+               
+               <div class="linkWrapper"><div class="link"  id="link5"><a href="about.html">About</a></div></div>
+               
+               <div class="linkWrapper"><div class="link"  id="link6"><a href="contact.php">Contact</a></div>
+               
+            </div>
+        </div>
+    </div> 
+</div>
+
+
+
+
+<div class="contentWrapper">
+<div>
+<h2>BeAware Library</h2>
+  <p><br/>
+  <span class="bookdescription">Having a website were you can go get help is always useful. But keep in mind books are also a good resource when you don't have a computer near you. Here you will find different topics you may want to read about with a list of different books in that category.</span></p><br/><br/>
+  
+  <div class="headLink"><h2 align="center"><a href="#catagories">Explore Books by Catagory</a></h2></div>
+  <br/><br/>
+  
+  <div class="div"><h2>Featured Book</h2>
+<a href="http://www.boulderbookstore.net/book/9781595141880" target="_blank"><img src="images/ThirteenReasonsWhy.jpg" alt="Thirteen Reasons Why" width="215" height="321" class="picfeatured" /></a>
+  
+  <br/>
+  <h3 class="booktitle"><a href="http://www.boulderbookstore.net/book/9781595141880" target="_blank">Thirteen Reasons Why</a><br />
+    <span class="authorname">Jay Asher<br />
+    Suicide/Depression
+    </span>  </h3>
+  <div>
+    <p class="bookdescription">Clay Jensen returns home from school to   find a strange package with his name on it lying on his porch. Inside he   discovers several cassette tapes recorded by Hannah Baker - his   classmate and crush - who committed suicide two weeks earlier. Hannah's   voice tells him that there are thirteen reasons why she decided to end   her life. Clay is one of them. If he listens, he'll find out why. Clay   spends the night crisscrossing his town with Hannah as his guide. He   becomes a firsthand witness to Hannah's pain, and learns the truth about   himself-a truth he never wanted to face.</p>
+    <p> <span class="bookdescription"><em><a href="http://www.boulderbookstore.net/book/9781595141880" target="_blank">Thirteen Reasons Why</a></em> is the gripping, addictive international bestseller that has changed lives the world over. It's an unrelenting modern classic.</span></p>
+</div>
+</div>
+  <p class="bookdescription">&nbsp;</p>
+  <p class="bookdescription"><br />
+  </p>
+  <p class="bookdescription">&nbsp; </p>
+  </div>
+  
+  <div class="bookdiv"><p><a href="http://www.boulderbookstore.net/book/9780061122415" target="_blank"><img src="images/The Alchemist - Paulo Coehlo.jpg" alt="The Alchemist" width="145" height="217" class="picright" /></a> </p>
+  <h4 class="booktitle"><a href="http://www.boulderbookstore.net/book/9780061122415" target="_blank">The Alchemist</a>
+    </h4>
+  <h4 class="authorname">Paulo Coehlo</h4>
+  <h4 class="authorname">Awareness</h4>
+  <p class="bookdescription">"My heart is afraid that it will have to suffer," the boy told the alchemist one night as they looked up at the moonless sky." Tell your heart that the fear of suffering is worse than the suffering itself. And that no heart has ever suffered when it goes in search of its dreams."
+    The Alchemist is the magical story of Santiago, an Andalusian shepherd boy who yearns to travel in search of a worldly treasure as extravagant as any ever found. From his home in Spain he journeys to the markets of Tangiers and across the Egyptian desert to a fateful encounter with the alchemist.
+    The story of the treasures Santiago finds along the way teaches us, as only a few stories have done, about the essential wisdom of listening to our hearts, learning to read the omens strewn along life's path, and, above all, following our dreams.
+  Every few decades a book is published that changes the lives of its readers forever. The Alchemist is such a book. With over a million and a half copies sold around the world, The Alchemist has already established itself as a modern classic, universally admired. Paulo Coelho's charming fable, now available in English for the first time, will enchant and inspire an even wider audience of readers for generations to come.</p></div>
+   <hr/> <div class="bookdiv"> <a href="http://www.boulderbookstore.net/book/9780440204886" target="_blank"><img src="images/Illusions - Richard Bach.jpg" alt="Illusions: The Adventures of a Reluctant Messiah" width="371" height="475" class="picleft" /></a>
+     <h4 class="booktitle">
+     <br/>
+     <a href="http://www.boulderbookstore.net/book/9780440204886" target="_blank">Illusions: The Adventures of a Reluctant Messiah</a>
+      </h4>
+      <h4 class="authorname">Richard Bach</h4>
+      <h4 class="authorname">Awareness</h4>
+      <p class="bookdescription">In the cloud-washed airspace between the cornfields of Illinois and blue infinity, a man puts his faith in the propeller of his biplane. For disillusioned writer and itinerant barnstormer Richard Bach, belief is as real as a full tank of gas and sparks firing in the cylinders ...until he meets Donald Shimoda - former mechanic and self-described messiah who can make wrenches fly and Richard's imagination soar...In Illusions, the unforgettable follow-up to his phenomenal New York Times bestseller Jonathan Livingston Seagull, Richard Bach takes to the air to discover the ageless truths that give our souls wings: that people don't need airplanes to soar ...that even the darkest clouds have meaning once we lift ourselves above them ...and that messiahs can be found in the unlikeliest places - like hay fields, one-traffic-light midwestern towns, and most of all, deep within ourselves.<br />
+        <br />
+      </p>
+    </div><hr/>
+<div class="bookdiv"> <a href="http://www.boulderbookstore.net/book/9780743278904" target="_blank"><img src="images/Johnathan Livingston Seagull - Richard Bach.jpg" alt="Jonathan Livingston Seagull" width="200" height="342" class="picright" /></a>
+     <h4 class="booktitle">
+
+     <a href="http://www.boulderbookstore.net/book/9780743278904" target="_blank">Jonathan Livingston Seagull</a></h4>
+      <h4 class="authorname">Richard Bach</h4>
+      <h4 class="authorname">Awareness</h4>
+      <p class="bookdescription">This is a story for people who follow their hearts and make their own rules...people who get special pleasure out of doing something well, even if only for themselves...people who know there's more to this living than meets the eye: they’ll be right there with Jonathan, flying higher and faster than ever they dreamed.<br />
+        <br />
+        <br />
+        <br />
+        <br/>
+        <br/>
+      </p>
+  </div><hr/>
+
+   <div class="bookdiv"> <a href="http://www.boulderbookstore.net/book/9780142410974" target="_blank"><img src="images/Just Listen.jpg" alt="Just Listen" width="333" height="500" class="picleft" /></a>
+     <h4 class="booktitle">
+     <br />
+     <a href="http://www.boulderbookstore.net/book/9780142410974" target="_blank">Just Listen</a></h4>
+      <h4 class="authorname">Sarah Dessen</h4>
+      <h4 class="authorname">Bullying</h4>
+      <p class="bookdescription">When Annabel, the youngest of three beautiful sisters, has a bitter falling out with her best friend—the popular and exciting Sophie—she suddenly finds herself isolated and friendless. but then she meets Owen—a loner, passionate about music and his weekly radio show, and always determined to tell the truth. And when they develop a friendship, Annabel is not only introduced to new music but is encouraged to listen to her own inner voice. with owen’s help, can Annabel find the courage to speak out about what exactly happened the night her friendship with Sophie came to a screeching halt?</p>
+
+        <br />
+        <br />
+        <br />
+  </div><hr/> 
+    <div class="bookdiv"> <a href="http://www.boulderbookstore.net/book/9780142402511" target="_blank"><img src="images/looking for alaska.jpg" alt="Looking for Alaska" width="150" height="226" class="picright" /></a>
+     <h4 class="booktitle">
+     <br />
+     
+     <a href="http://www.boulderbookstore.net/book/9780142402511" target="_blank">Looking for Alaska</a></h4>
+      <h4 class="authorname">John Green</h4>
+      <h4 class="authorname">Bullying</h4>
+      <p class="bookdescription">Before. Miles “Pudge” Halter is done with his safe life at home. His whole life has been one big non-event, and his obsession with famous last words has only made him crave “the Great Perhaps” even more (Francois Rabelais, poet). He heads off to the sometimes crazy and anything-but-boring world of Culver Creek Boarding School, and his life becomes the opposite of safe. Because down the hall is Alaska Young. The gorgeous, clever, funny, sexy, self-destructive, screwed up, and utterly fascinating Alaska Young. She is an event unto herself. She pulls Pudge into her world, launches him into the Great Perhaps, and steals his heart. Then. . . . After. Nothing is ever the same.</p>
+      <p>&nbsp;</p>
+  </div><hr/>
+  <div class="bookdiv"> <a href="http://www.boulderbookstore.net/book/9781780873305" target="_blank"><img src="images/playground.jpg" alt="Playground" width="145" height="146" class="picleft" /></a>
+     <h4 class="booktitle">
+     <br />
+     <a href="http://www.boulderbookstore.net/book/9781780873305" target="_blank">Playground</a> </h4>
+      <h4 class="authorname">50 Cent</h4>
+    <h4 class="authorname">Bullying</h4>
+    <p class="bookdescription">A hard-hitting and inspirational novel about the redemption of a bully from international icon 50 Cent.</p>
+      <p class="bookdescription"> Thirteen-year-old Butterball takes readers on a journey through the moments that made him into the playground bully he is today. Loosely inspired by 50 Cent's own adolescence and written with his teenage son in mind, Playground received wide critical praise--and is now poised to become a perennial classic. </p>
+      <br />
+      <br />
+  </div><hr/>   
+    <div class="bookdiv"> <a href="http://www.boulderbookstore.net/book/9781934813324" target="_blank"><img src="images/scars.jpg" alt="Scars" width="300" height="465" class="picright" /></a>
+     <h4 class="booktitle">
+
+     <a href="http://www.boulderbookstore.net/book/9781934813324" target="_blank">Scars</a></h4>
+      <h4 class="authorname">Cheryl Rainfield</h4>
+      <h4 class="authorname">Cutting</h4>
+      <p class="bookdescription">Kendra, a sexual abuse survivor, cuts to cope with the pain, but she doesn't remember the identity of who abused her. Kendra makes a friend in Meghan, and falls in love with her. When Kendra's abuser starts threatening her, she must find a way to face her past and stop hurting herself--before it's too late.
+
+</p>
+      <br />
+      <br />
+      <br />
+      <br/>
+  </div><hr/>
+  <div class="bookdiv"> <a href="http://www.boulderbookstore.net/book/9780312674397" target="_blank"><img src="images/Speak_1st_Edition_Cover.jpg" alt="Speak" width="200" height="268" class="picleft" /></a>
+     <h4 class="booktitle"><br/><a href="http://www.boulderbookstore.net/book/9780312674397" target="_blank">Speak</a></h4>
+      <h4 class="authorname">Laurie Halse Anderson</h4>
+    <h4 class="authorname">Date Rape/Partner Violence</h4>
+    <p class="bookdescription">The first ten lies they tell you in high school. "Speak up for yourself--we want to know what you have to say." From the first moment of her freshman year at Merryweather High, Melinda knows this is a big fat lie, part of the nonsense of high school. She is friendless, outcast, because she busted an end-of-summer party by calling the cops, so now nobody will talk to her, let alone listen to her. As time passes, she becomes increasingly isolated and practically stops talking altogether. Only her art class offers any solace, and it is through her work on an art project that she is finally able to face what really happened at that terrible party: she was raped by an upperclassman, a guy who still attends Merryweather and is still a threat to her. Her healing process has just begun when she has another violent encounter with him. But this time Melinda fights back, refuses to be silent, and thereby achieves a measure of vindication. In Laurie Halse Anderson's powerful novel, an utterly believable heroine with a bitterly ironic voice delivers a blow to the hypocritical world of high school. She speaks for many a disenfranchised teenager while demonstrating the importance of speaking up for oneself. Speak was a 1999 National Book Award Finalist for Young People's Literature.
+      <br />
+     </p>
+  </div>
+  <hr/>   
+    <div class="bookdiv"> <a href="http://www.boulderbookstore.net/book/9780061766695" target="_blank"><img src="images/don't breathe a word HC.jpg.jpg" alt="Don't Breathe A Word" width="1060" height="1600" class="picright" /></a>
+     <h4 class="booktitle"><a href="http://www.boulderbookstore.net/book/9780061766695" target="_blank">Don't Breathe A Word</a></h4>
+      <h4 class="authorname">Holly Cupala</h4>
+      <h4 class="authorname">Date Rape/Partner Violence</h4>
+      <p class="bookdescription">Joy Delamere is suffocating.      </p>
+      <p class="bookdescription"> From asthma, from her parents, and from her boyfriend, Asher, who is smothering her from the inside out. She can take his cruel words, his tender words . . . until the night they go too far. 
+        
+      To escape, Joy sacrifices her suburban life to find the one who offered his help, a homeless boy called Creed. He introduces her to a world of fierce loyalty, to its rules of survival, and to love—a world she won’t easily let go. </p>
+      <p class="bookdescription"> Set against the backdrop of the streets of Seattle, Holly Cupala’s power­ful new novel explores the subtleties of abuse, the secrets we keep, and the ways to redemption. But above all, it is an unflinching story about the extraordinary lengths one girl will go to discover her own strength. <br />
+        <br />
+      </p>
+  </div><hr/>  
+ <div class="bookdiv"> <a href="http://www.boulderbookstore.net/book/9780142415573" target="_blank"><img src="images/wintergirls.jpg" alt="Wintergirls" width="398" height="531" class="picleft" /></a>
+    <h4 class="booktitle">
+      <br />
+
+    <a href="http://www.boulderbookstore.net/book/9780142415573" target="_blank">Wintergirls</a></h4>
+      <h4 class="authorname">Laurie Halse Anderson</h4>
+    <h4 class="authorname">Body Image</h4>
+    <p class="bookdescription">Lia and Cassie are best friends, wintergirls frozen in fragile bodies, competitors in a deadly contest to see who can be the thinnest. But then Cassie suffers the ultimate loss-her life-and Lia is left behind, haunted by her friend's memory and racked with guilt for not being able to help save her. In her most powerfully moving novel since Speak, award-winning author Laurie Halse Anderson explores Lia's struggle, her painful path to recovery, and her desperate attempts to hold on to the most important thing of all: hope.
+      <br />
+      <br />
+      <br />
+      <br/>
+    </p>
+  </div>
+  <hr/>   
+    <div class="bookdiv"> <a href="http://www.boulderbookstore.net/book/9781599907802" target="_blank"><img src="images/butter.jpg" alt="Butter" width="317" height="475" class="picright" /></a>
+     <h4 class="booktitle"><a href="http://www.boulderbookstore.net/book/9781599907802" target="_blank">Butter</a></h4>
+      <h4 class="authorname">Eric Jade Lange</h4>
+      <h4 class="authorname">Body Image</h4>
+      <p class="bookdescription">A lonely obese boy everyone calls "Butter" is about to make history. He is going to eat himself to death-live on the Internet-and everyone is invited to watch. When he first makes the announcement online to his classmates, Butter expects pity, insults, and possibly sheer indifference. What he gets are morbid cheerleaders rallying around his deadly plan. Yet as their dark encouragement grows, it begins to feel a lot like popularity. And that feels good. But what happens when Butter reaches his suicide deadline? Can he live with the fallout if he doesn't go through with his plans? </p>
+      <p class="bookdescription"> With a deft hand, E.J. Lange allows readers to identify with both the bullies and the bullied in this all-consuming look at one teen's battle with himself. <br />
+  <br />
+      </p>
+  </div><hr/>   
+   <div class="bookdiv"> <a href="http://www.boulderbookstore.net/book/9781451696196" target="_blank"><img src="images/perks-of-being-book-220.jpg" alt="The Perks of Being A Wallflower" width="220" height="300" class="picleft" /></a>
+    <h4 class="booktitle">
+    <br />
+   <a href="http://www.boulderbookstore.net/book/9781451696196" target="_blank">The Perks of Being A Wallflower</a></h4>
+      <h4 class="authorname">Stephen Chbosky</h4>
+    <h4 class="authorname">Grieving</h4>
+    <p class="bookdescription">Standing on the fringes of life offers a unique perspective…but there comes a time to see what it looks like from the dance floor. 
+Since its publication, Stephen Chbosky’s haunting debut novel has received critical acclaim, provoked discussion and debate, grown into a cult phenomenon with over a million copies in print, and inspired a major motion picture. 
+The perks of being a wallflower is a story about what it’s like to travel that strange course through the uncharted territory of high school. The world of first dates, family dramas, and new friends, sex, drugs, and the Rocky Horror Picture Show.<br />
+<br />
+  </p></div>
+    <hr/>
+     <div class="bookdiv"> <a href="http://www.boulderbookstore.net/book/9780525478812" target="_blank"><img src="images/The_Fault_in_Our_Stars.jpg" alt="The Fault in Our Starts" width="200" height="293" class="picright" /></a>
+    <h4 class="booktitle">
+    <br />
+    <a href="http://www.boulderbookstore.net/book/9780525478812" target="_blank">The Fault in Our Stars</a></h4>
+      <h4 class="authorname">John Green</h4>
+    <h4 class="authorname">Illness</h4>
+    <p class="bookdescription">Despite the tumor-shrinking medical miracle that has bought her a few years, Hazel has never been anything but terminal, her final chapter inscribed upon diagnosis. But when a gorgeous plot twist named Augustus Waters suddenly appears at Cancer Kid Support Group, Hazel’s story is about to be completely rewritten.</p>
+<p class="bookdescription">Insightful, bold, irreverent, and raw, The Fault in Our Stars is award-winning-author John Green’s most ambitious and heartbreaking work yet, brilliantly exploring the funny, thrilling, and tragic business of being alive and in love.<br />
+  <br />
+<br />
+</p>
+  </div>
+    <hr/>
+    <div class="bookdiv"> <a href="http://www.boulderbookstore.net/book/9781402273070" target="_blank"><img src="images/cancer_sucks.jpg" alt="My Parent Has Cancer and It Really Sucks: Real-Life Advice from Real-Life Teens" width="268" height="400" class="picleft" /></a>
+    <h4 class="booktitle">
+    <br />
+    <a href="http://www.boulderbookstore.net/book/9781402273070" target="_blank">My Parent Has Cancer and It Really Sucks: Real-Life Advice from Real-Life Teens</a></h4>
+      <h4 class="authorname">Maya &amp; Marc Silver</h4>
+    <h4 class="authorname">Illness</h4>
+    <p class="bookdescription">Currently one million American teenagers live with a parent who is fighting cancer. It's a hard blow for those already navigating high school, preparing for college, and becoming increasingly independent. My Parent Has Cancer and It Really Sucks is the first book written especially for teens to help during this tough time.</p>
+    <p class="bookdescription">Author Maya Silver was 15 when her mom was diagnosed with breast cancer in 2001. She and her dad, Marc, have combined their family's personal experience with advice from dozens of medical professionals and real stories from 100 teens--all going through the same thing Maya did. <br />
+      <br />
+<br />
+  </p></div>
+    <hr/>
+  <div class="bookdiv"> <a href="http://www.boulderbookstore.net/book/9780545290791" target="_blank"><img src="images/cut.jpg" alt="Cut" width="500" height="698" class="picright" /></a>
+    <h4 class="booktitle">
+    <br />
+    <a href="http://www.boulderbookstore.net/book/9780545290791" target="_blank">Cut</a></h4>
+      <h4 class="authorname">Patricia McCormick</h4>
+    <h4 class="authorname">Suicide/Depression</h4>
+    <p class="bookdescription">A tingle arced across my scalp. The floor tipped up at me and my body spiraled away. Then I was on the ceiling looking down, waiting to see what would happen next.</p>
+    <p class="bookdescription">Callie cuts herself. Never too deep, never enough to die. But enough to feel the pain. Enough to feel the scream inside.
+      Now she's at Sea Pines, a "residential treatment facility" filled with girls struggling with problems of their own. Callie doesn't want to have anything to do with them. She doesn't want to have anything to do with anyone. She won't even speak.
+      But Callie can only stay silent for so long....
+      <br />
+      <br />
+<br />
+    </p>
+  </div>
+    <hr/>
+ <div class="bookdiv"> <a href="http://www.boulderbookstore.net/book/9780689865190" target="_blank"><img src="images/crank.jpg" alt="Crank" width="400" height="560" class="picleft" /></a>
+    <h4 class="booktitle">
+<br/>
+    <a href="http://www.boulderbookstore.net/book/9780689865190" target="_blank">Crank</a></h4>
+      <h4 class="authorname">Ellen Hopkins</h4>
+    <h4 class="authorname">Substance Abuse</h4>
+    <p class="bookdescription">Kristina Georgia Snow is the perfect daughter: gifted high school junior, quiet, never any trouble. But on a trip to visit her absentee father, Kristina disappears and Bree takes her place. Bree is the exact opposite of Kristina -- she's fearless.</p>
+    <p class="bookdescription">Through a boy, Bree meets the monster: crank. And what begins as a wild, ecstatic ride turns into a struggle through hell for her mind, her soul -- her life. <br />
+      <br />
+  <br />
+    </p>
+  </div>
+    <hr/>
+  <div class="bookdiv"> <a href="http://www.boulderbookstore.net/book/9781416983248" target="_blank"><img src="images/Perfect.jpg" alt="Perfect" width="318" height="449" class="picright" /></a>
+    <h4 class="booktitle"><a href="http://www.boulderbookstore.net/book/9781416983248" target="_blank">Perfect</a></h4>
+      <h4 class="authorname">Ellen Hopkins</h4>
+    <h4 class="authorname">Substance Abuse</h4>
+    <p class="bookdescription">Everyone has something, someone, somewhere else that they’d rather be. For four high-school seniors, their goals of perfection are just as different as the paths they take to get there.</p>
+    <p class="bookdescription">Cara’s parents’ unrealistic expectations have already sent her twin brother Conner spiraling toward suicide. For her, perfect means rejecting their ideals to take a chance on a new kind of love. Kendra covets the perfect face and body—no matter what surgeries and drugs she needs to get there. To score his perfect home run—on the field and off—Sean will sacrifice more than he can ever win back. And Andre realizes that to follow his heart and achieve his perfect performance, he’ll be living a life his ancestors would never have understood.</p>
+    <p class="bookdescription">Everyone wants to be perfect, but when perfection loses its meaning, how far will you go? What would you give up to be perfect?</p>
+    <p class="bookdescription">A riveting and startling companion to the bestselling Impulse, Ellen Hopkins's Perfect exposes the harsh truths about what it takes to grow up and grow into our own skins, our own selves. <br />
+    </p>
+  </div>
+    <hr/>     
+    
+    
+</div>
+
+
+<div id="catagories"></div>
+<div class="subbooksWrapper">
+<h2 align="center">Categories</h2>
+	<div class="subbooks_row1">
+	  <h3>Awareness</h3>
+        <div class="authorbookLinks">
+
+            <p><span class="booktitle">The Alchemist<br />
+            </span><span class="authorname"><small> Paulo Coehlo</small></span><br/>
+            <span class="booktitle">Illusions<br />
+            </span><span class="authorname"><small>Richard Bach</small></span><br/>
+            <span class="booktitle">Jonathan Livingston Seagull<br />
+            </span><span class="authorname"><small>Richard Bach</small></span>                              </div>
+  </div>
+    </p>
+    <div class="subbooks_row1">
+      <h3>Bullying</h3>
+    	<div class="authorbookLinks">
+        	<p><span class="booktitle">Belles<br />
+        	</span><span class="authorname"><small>Jen Calonita</small><br />
+        	</span><span class="booktitle">Butter</span><br />
+       	    <span class="authorname"><small>Erin Jade Lange</small><br />
+       	    </span><span class="booktitle">Everybody Sees the Ants</span><br />
+            <span class="authorname"><small>AS King</small></span><br/>
+            <span class="booktitle">Hate List</span><br />
+            <span class="authorname"><small>Jennifer Brown</small></span><br/>
+            <span class="booktitle">Just Listen</span><br />
+            <span class="authorname"><small>Sarah Dessen</small></span><br/>
+            <span class="booktitle">Keep Holding On </span> <br />
+            <span class="authorname"><small>Susan Colasanti</small></span><br/>
+            <span class="booktitle">Looking for Alaska</span> <br />
+            <span class="authorname"><small>John Green</small></span><br/>
+            <span class="booktitle">Loss <br />
+            </span> <span class="authorname"><small>Jackie Morse Kessler</small></span><br/>
+            <span class="booktitle">Playground </span><br />
+            <span class="authorname"><small>50 Cent</small></span><br/>
+            <span class="booktitle">What Happens Next</span> <br />
+            <span class="authorname"><small>Colleen Clayton</small></span><br/>
+        	</p>
+        </div>
+    </div>
+    
+    <div class="subbooks_row1">
+      <h3>Cutting</h3>
+    	<div class="authorbookLinks">
+       	  <p><span class="booktitle">Cut</span> <br />
+       	    <span class="authorname"><small>Patricia McCormick</small></span><br class="authorname"/>
+            <span class="booktitle">Identical<br />
+          </span><span class="authorname"><small>Ellen Hopkins</small></span><br/>
+            <span class="booktitle">Impulse<br />
+            </span><span class="authorname"><small>Ellen Hopkins</small></span><br/>
+            <span class="booktitle">Rage<br />
+            </span><span class="authorname"><small>Jackie Morse Kessler</small></span><br/>
+            <span class="booktitle">Scars<br />
+            </span><span class="authorname"><small>Cheryl Rainfield</small></span><br/>
+            <span class="booktitle">Two or Three Things I Forgot to Tell You</span> 
+            <span class="authorname"><small>Joyce Carol Oates</small></span><br/>
+            <span class="booktitle">Wintergirls<br />
+            </span><span class="authorname"><small>Laurie Halse Anderson</small></span><br/>
+          </p>
+      </div>
+  </div>
+     
+    <div class="subbooks_row2">
+      <h3>Date Rape/Partner<br/><br/>Violence/Stalking</h3>
+    	<div class="authorbookLinks">
+          <p><span class="booktitle">Don't Breath a Word<br />
+          </span><span class="authorname"><small>Holly Cupala</small></span><br/>
+            <span class="booktitle">Dreamland</span> <br />
+            <span class="authorname"><small>Sarah Dessen</small></span><br/>
+            <span class="booktitle">Freaky Green Eyes</span> <br />
+            <span class="authorname"><small>Joyce Carol Oates</small></span><br/>
+          <span class="booktitle">Just Listen<br />
+          </span><span class="authorname"><small>Sarah Dessen</small></span><br/>
+            <span class="booktitle">Perks of Being a Wallflower<br />
+            </span> <span class="authorname"><small>Stephen Chbosky</small></span><br/>
+            <span class="booktitle">Speak<br />
+            </span><span class="authorname"><small>Laurie Halse Andereson</small></span><br/>
+            <span class="booktitle">The Mockingbirds<br />
+            </span><span class="authorname"><small>Daisy Whitney</small></span><br/>
+            <span class="booktitle">What Happens Next</span><br />
+            <span class="authorname"><small>Colleen Clayton</small></span><br/>
+          </p>
+        
+      </div>
+  </div>
+     
+    <div class="subbooks_row2">
+      <h3>Eating Disorders<br/><br/><br/></h3>
+    	<div class="authorbookLinks">
+        	<p><span class="booktitle">Butter</span><br class="booktitle" />
+   	          <span class="authorname"><small>Erin Jade Lange</small></span><br/>
+              <span class="booktitle">Hunger</span><br />
+              <span class="authorname"><small>Jackie Morse Kessler</small></span><br/>
+              <span class="booktitle">Identical</span><br />
+              <span class="authorname"><small>Ellen Hopkins</small></span><br/>
+            <span class="booktitle">Perfect<br />
+            </span><span class="authorname"><small>Ellen Hopkins</small></span><br/>
+            <span class="booktitle">What Happens Next</span><br />
+            <span class="authorname"><small>Colleen Clayton</small></span><br/>
+            <span class="booktitle">Wintergirls</span><br />
+            <span class="authorname"><small>Laurie Halse Anderson</small></span><br/>
+            <span class="booktitle">Zoe Letting Go<br />
+            </span>            <span class="authorname"><small>Nora Price</small></span><br/>
+        	</p>
+      </div>
+  </div>
+    
+    <div class="subbooks_row2">
+      <h3>Grieving<br/><br/><br/></h3>
+        <div class="authorbookLinks"><br/>
+        	<span class="booktitle">Looking for Alaska <br />
+        	</span><span class="authorname"><small>John Green</small></span><br/>
+            <span class="booktitle">Perks of Being a Wallflower</span> <br />
+          <span class="authorname"><small>Stephen Chbosky</small></span><br/>
+            <span class="booktitle">Please Ignore Vera Dietz</span> <br />
+          <span class="authorname"><small>AS King</small></span><br/>
+            <span class="booktitle">Someone Like You</span> <br />
+          <span class="authorname"><small>Sarah Dessen</small></span><br/>
+            <span class="booktitle">Tears of a Tiger</span> <br />
+          <span class="authorname"><small>Sharon Draper</small></span><br/>
+            <span class="booktitle">The Truth about Forever<br />
+            </span> <span class="authorname"><small>Sarah Dessen</small></span><br/>
+            <span class="booktitle">Wintergirls </span><br /> 
+            <span class="authorname"><small>Laurie Halse Anderson</small></span><br/> 
+      </div>
+  </div>
+    
+    <div class="subbooks_row3">
+      <h3>Illness</h3>
+    	<div class="authorbookLinks"><br/>
+        	<span class="booktitle">Deadline</span><br />
+   	      <span class="authorname"><small>Chris Crutcher</small></span><br/>
+            <span class="booktitle">My Parent Has Cancer and it Really Sucks</span> 
+            <span class="authorname"><small>Maya  &amp; Marc Silver</small></span><br/>
+            <span class="booktitle">The Fault in Our Stars<br />
+            </span><span class="authorname"><small>John Green</small></span><br/>
+            <span class="booktitle">Tilt<br />
+            </span><span class="authorname"><small>Ellen Hopkins</small></span><br/>
+      </div>
+  </div>
+    
+    <div class="subbooks_row3">
+      <h3>Incest/Child Abuse</h3>
+    	<div class="authorbookLinks">
+        	<p><span class="booktitle">Burned </span><br />
+        	  <span class="authorname"><small>Ellen Hopkins</small></span><br/>
+              <span class="booktitle">Freaky Green Eyes</span><br />
+              <span class="authorname"><small>Joyce Carol Oates</small></span><br/>
+              <span class="booktitle">Identical</span><br />
+              <span class="authorname"><small>Ellen Hopkins</small></span><br/>
+              <span class="booktitle">Lush</span><br />
+              <span class="authorname"><small>Natasha Friend</small></span><br/>
+              <span class="booktitle">Perks of Being a Wallflower</span><br />
+              <span class="authorname"><small>Stephen Chbosky</small></span><br/>
+              <span class="booktitle">Please Ignore Vera Dietz</span><br />
+              <span class="authorname"><small>AS King</small></span><br/>
+            <span class="booktitle">Tears of a Tiger<br />
+            </span><span class="authorname"><small>Sharon Draper</small></span><br/>
+        	</p>
+      </div>
+  </div>
+    
+    <div class="subbooks_row3">
+      <h3>Perfectionism/Pressure</h3>
+    	<div class="authorbookLinks"><br/>
+        	<span class="booktitle">Identical</span><br />
+        	<span class="authorname"><small>Ellen Hopkins</small></span><br/>
+            <span class="booktitle">Just Listen</span><br />
+            <span class="authorname"><small>Sarah Dessen</small><br/>
+            </span><span class="booktitle">Perfect</span><br />
+            <span class="authorname"><small>Ellen Hopkins</small></span><br/>
+      </div>
+  </div>
+    
+    <div class="subbooks_row4">
+      <h3>Suicide/Depression</h3>
+        <div class="authorbookLinks">
+            <span class="booktitle"><br />
+            13 Reasons Why<br />
+            </span><span class="authorname"><small>Jay Asher</small></span><br/>
+            <span class="booktitle">Breath<br />
+            </span><span class="authorname"><small>Jackie Morse Kessler</small></span><br/>
+            <span class="booktitle">Butter<br />
+            </span><span class="authorname"><small>Erin Jade Lange</small></span><br/>
+            <span class="booktitle">Cut<br />
+            </span><span class="authorname"><small>Patricia McCormick</small></span><br/>
+            <span class="booktitle">Forgive Me, Leonard Peacock<br />
+            </span><span class="authorname"><small>Matthew Quick</small></span><br/>
+            <span class="booktitle">Hunger<br />
+            </span><span class="authorname"><small>Jackie Morse Kessler</small></span><br/>
+            <span class="booktitle">Impulse</span><br />
+          <span class="authorname"><small>Ellen Hopkins</small></span><br/>
+            <span class="booktitle">Keep Holding On</span><br />
+          <span class="authorname"><small>Susan Colasanti</small></span><br/>
+            <span class="booktitle">Perks of Being a Wallflower</span><br />
+            <span class="authorname"><small>Stephen Chbosky</small></span><br/>
+            <span class="booktitle">Two or Three Things I Forgot to Tell You</span>
+            <span class="authorname"><small>Joyce Carol Oates</small></span><br/>
+            <span class="booktitle">Wintergirls<br />
+            </span><span class="authorname"><small>Laurie Halse Anderson</small></span><br/>
+            <span class="booktitle">Zoe Letting Go</span><br /> 
+            <span class="authorname"><small>Nora Price</small></span><br/>
+      </div>
+  </div>
+    
+    <div class="subbooks_row4">
+      <h3>Substance Abuse</h3>
+    	<div class="authorbookLinks">
+        	<span class="booktitle"><br />
+        	Beneath a Meth Moon</span><br />
+        	<span class="authorname"><small>Jacqueline Woodson</small></span><br/>
+            <span class="booktitle">Crank<br />
+            </span><span class="authorname"><small>Ellen Hopkins</small><br/>
+            </span><span class="booktitle">Fallout</span><br />
+            <span class="authorname"><small>Ellen Hopkins</small></span><br/>
+            <span class="booktitle">Glass</span><br />
+            <span class="authorname"><small>Ellen Hopkins</small></span><br/>
+            <span class="booktitle">Go Ask Alice</span><br />
+            <span class="authorname"><small>Anonymous</small></span><br/>
+            <span class="booktitle">Identical</span><br />
+            <span class="authorname"><small>Ellen Hopkins</small></span><br/>
+            <span class="booktitle">Impulse<br />
+            </span><span class="authorname"><small>Ellen Hopkins</small><br/>
+            </span><span class="booktitle">Lush<br />
+            </span><span class="authorname"><small>Natasha Friend</small><br/>
+            </span><span class="booktitle">My Life Next Door</span><br />
+            <span class="authorname"><small>Huntly Fitzpatrick</small></span><br/>
+            <span class="booktitle">Perfect</span><br />
+            <span class="authorname"><small>Ellen Hopkins</small></span><br/>
+            <span class="booktitle">Please Ignore Vera Dietz</span><br />
+            <span class="authorname"><small>A.S. King</small></span><br/>
+            <span class="booktitle">Tears of a Tiger<br />
+            </span><span class="authorname"><small>Sharon Draper</small><br/>
+      </span></div>
+  </div>
+    
+    <div class="subbooks_row4">
+      <h3>Sexual Questioning</h3>
+    
+    	<div class="authorbookLinks">
+        	<span class="booktitle"><br />
+        	Ask The Passengers<br />
+        	</span><span class="authorname"><small>A.S. King</small></span><br/>
+            <span class="booktitle">Miseducation of Cameron Post<br />
+            </span><span class="authorname"><small>Emily Danforth</small></span><br/>
+            <span class="booktitle">Perfect</span><br />
+            <span class="authorname"><small>Ellen Hopkins</small></span><br/>
+            <span class="booktitle">Perks of Being a Wallflower</span><br />
+            <span class="authorname"><small>Stephen Chbosky</small></span><br/>
+            <span class="booktitle">Shine</span><br />
+            <span class="authorname"><small>Lauren Myracle</small></span><br/>
+            <span class="booktitle">The Bermudez Triangle</span><br />
+            <span class="authorname"><small>Maureen Johnson</small></span><br/>
+            <span class="booktitle">Tilt</span><br />
+            <span class="authorname"><small>Ellen Hopkins</small></span><br/>
+            <span class="booktitle">Will Grayson, Will Grayson</span> 
+            <span class="authorname"><br /><small>John Green and David Levithan</small></span><br/>
+  </div></div>
+</div>
+
+
+  <div><h2 id="headLink" align="center"><a href="#top">Back to the Top</a></h2></div>
+
+
+
+
+
+<div class="icon_wrapper">
+<a href="https://twitter.com/awarenessdrive" target="_blank" class=" icon_section opaque-rollover" style="display:block; height:200px; width:180px; text-align:center;">
+<img src="images/twitter_icon.fw.png" alt="Twitter AwarenessDrive.org" height="40" style="display:block; margin:0px auto;" />
+<span class="iconHead">Twitter</span><br/>
+Follow Awarnessdrive.org on Twitter for more info.
+</a>
+
+<a href="blog.html" class="icon_section opaque-rollover" style="display:block; height:200px; width:180px; text-align:center;">
+<img src="images/blog_icon.fw.png" alt="BeAware Blog" height="40" style="display:block; margin:0px auto;" />
+<span class="iconHead">BeAware Blog</span><br/>
+Read about how they became a group and read about other teen’s experiences.
+</a>
+
+<a href="library.html" class="icon_section opaque-rollover" style="display:block; height:200px; width:180px; text-align:center;">
+<img src="images/book_icon.fw.png" alt="BeAware Library" height="40" style="display:block; margin:0px auto;" />
+<span class="iconHead">BeAware Library</span><br/>
+Read small descriptions of each book describing others experiences.
+</a>
+
+<a href="posters.html" class="icon_section opaque-rollover" style="display:block; height:200px; width:180px; text-align:center;">
+<img src="images/poster_icon.fw.png" alt="BeAware Posters" height="40" style="display:block; margin:0px auto;" />
+<span class="iconHead">Posters</span><br/>
+AwarenessDrive BeAware posters.
+</a>
+
+<a href="https://www.facebook.com/pages/Awarenessdriveorg/581286078548981" target="_blank" class="icon_section opaque-rollover" style="display:block; height:200px; width:180px; text-align:center;">
+<img src="images/facebook_icon.fw.png" alt="Facebook AwarenessDrive.org" height="40" style="display:block; margin:0px auto;" />
+<span class="iconHead">Facebook</span><br/>
+&quot;Like&quot; us on Facebook and read about current  events and upcoming projects.
+</a>
+<br/>
+</div>
+
+
+
+<div class="footer">
+<p>AwarenessDrive.org | <a href="contact.php">Contact Us</a><br />
+     © Copyright 2013</p>
+    <p>Site powered by <a href="https://www.facebook.com/pages/I-T-TEC-at-Boulder-TEC/114727078588974?fref=ts" target="_blank">IT CTE at CTE Boulder</a></p>
+</div>
+</body>
+</html>
