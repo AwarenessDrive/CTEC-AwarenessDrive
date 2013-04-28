@@ -1,5 +1,5 @@
 sync.source.projectdir=../
-sync.destination.projectdir=~/www/sb/test
+sync.destination.projectdir=~/www/ad/sb
 sync.remote.host=shamesite.org
 sync.remote.user=shamesit
 sync.destination.backupdir=~/rsync-backup/sb

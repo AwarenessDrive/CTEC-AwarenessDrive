@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+<!-- the xmlns atribute is invalid in html but required in xhtml  xmlns="http://www.w3.org/1999/xhtml" -->
 
 <head>
 <link rel="stylesheet" type="text/css" href="css/base_styles.css" />
@@ -18,12 +18,9 @@ body{
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 .center{
-	position:relative;
-	margin:0px auto;
 	text-align:center;
-	width:300px;
 }
-.right{
+right{
 	float:right;	
 } 
 .feat_vid{
@@ -44,6 +41,18 @@ body{
 	height:436px;
 	box-shadow:0px 0px 10px #fff;
 	-webkit-box-shadow: 0px 0px 10px #fff	
+}
+.iconHead{
+	display:block;
+	width:100%;
+	height:30px;
+	padding-top:20px;
+	border-bottom:1px solid #fff;
+	font-weight:bold;
+	font-size:18px;
+	color:#f82639;
+	text-shadow:2px 2px 4px #000;
+	-moz-text-shadow:2px 2px 4px #000;		
 }
 </style>
 </head>
@@ -85,7 +94,8 @@ body{
         
                 <div class="linkWrapper"><div class="link" id="link1"><a href="index.html">Home</a></div></div>
                
-               <div class="linkWrapper"><div class="link2"  id="link2" style="visiblity:'visible'"><a href="blog.html">BeAware</a>
+               <div class="linkWrapper"><div class="link2"  id="link2" style="visiblity:'visible'">
+               		<a href="blog.html" style="margin-top: 3px; font-size: 140%;">BeAware</a>
                <div class="drop" id="drop">
                    <div class="sub1" onclick="location.href='blog.html';"><a href="blog.html">BeAware Blog</a></div>
                     <div class="sub2" onclick="location.href='library.html';"><a href="library.html">BeAware Library</a></div>
@@ -104,6 +114,10 @@ body{
         </div>
     </div> 
 </div>
+
+
+
+
 
 
 

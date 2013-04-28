@@ -27,7 +27,7 @@ $(document).ready(function(){
 		$("#drop").stop();
 		$("#drop").css('opacity', '1.0');
 		$(this).delay(100);
-		$(this).animate({marginTop:10, height:43},300);
+		$(this).animate({marginTop:5, height:43},300);
 	});
 	
 	<!-- LINKS BUTTON -->

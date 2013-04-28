@@ -10,7 +10,7 @@
   </phingcall>
 </target>
 
-<target name="sync:list" description="List files on local server">
+<target name="sync:list" description="List files to be updated on local server">
   <phingcall target="-sync-execute-task">
     <property name="listonly" value="true" />
     <property name="sync.verbose" value="true" override="true" />
@@ -24,7 +24,7 @@
   	<property file="build.properties.sandbox" />
   </phingcall>
 </target>
-<target name="sync-sandbox:list" description="List files on sandbox">
+<target name="sync-sandbox:list" description="List files to be updated on sandbox">
   <phingcall target="-sync-execute-task">
     <property name="listonly" value="true" />
     <property name="sync.verbose" value="true" override="true" />
@@ -39,7 +39,7 @@
   	<property file="build.properties" />
   </phingcall>
 </target>
-<target name="sync-remote:list" description="List files on sandbox">
+<target name="sync-remote:list" description="List files to be updated on remote">
   <phingcall target="-sync-execute-task">
     <property name="listonly" value="true" />
     <property name="sync.verbose" value="true" override="true" />
@@ -52,6 +52,8 @@
   <tstamp>
   	<format property="sync.nowtime" pattern="%Y%m%d%H%M"  />
   </tstamp>
+  <!-- problematic in that, every time this executes, it updates the files which creates a loop - can't do auto builds -->
+  <exec command="php doTemplate.php" /> 
 </target>
 
 <target name="-sync-execute-task" depends="-init">

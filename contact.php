@@ -1,3 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<!-- the xmlns atribute is invalid in html but required in xhtml  xmlns="http://www.w3.org/1999/xhtml" -->
+
+<head>
+<link rel="stylesheet" type="text/css" href="css/base_styles.css" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+<script src="js/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script src="js/jquery-ui-1.10.0.custom.min.js" type="text/javascript"></script>
+<script src="js/navani.js" type="text/javascript"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>AwarenessDrive.org - Contact</title>
+<style type="text/css">
+body{
+	background-image:url(images/low_contrast_linen.png);	
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.center{
+	text-align:center;
+}
+right{
+	float:right;	
+} 
+.feat_vid{
+	position:relative;
+	margin:20px auto;
+	width:784px;
+	height:525px;
+	border:3px solid #fff;
+	box-shadow:0px 0px 10px #fff;
+	-webkit-box-shadow: 0px 0px 15px #fff;
+	-moz-box-shadow:0px 0px 15px #fff;
+}
+.sub_vid{
+	background-color:#000;
+	position:relative;
+	margin:10px auto 10px auto;
+	width:589px;
+	height:436px;
+	box-shadow:0px 0px 10px #fff;
+	-webkit-box-shadow: 0px 0px 10px #fff	
+}
+.iconHead{
+	display:block;
+	width:100%;
+	height:30px;
+	padding-top:20px;
+	border-bottom:1px solid #fff;
+	font-weight:bold;
+	font-size:18px;
+	color:#f82639;
+	text-shadow:2px 2px 4px #000;
+	-moz-text-shadow:2px 2px 4px #000;		
+}
+</style>
+</head>
+<body>
+
+
+<div class="headWrapper">
+
+	<div class="logo"><a href="index.html"><img src="images/Header1_750.gif" alt="AwarenessDrive.org" width="570"/></a> </div>
+    
+    <div class="right">
+
+
+      <div class="quick_top">
+            <div class="quick_top_icon" id="twitter"><a href="https://twitter.com/awarenessdrive" target="_blank"><img src="images/twitter_icon.fw.png" alt="Twitter AwarenessDrive.org" width="34" class="opaque-rollover" /></a></div>
+            
+        <div class="quick_top_icon" id="blog"><a href="blog.html"><img src="images/blog_icon.fw.png" alt="BeAware Blog" width="34" class="opaque-rollover" /></a></div>
+            
+        <div class="quick_top_icon" id="books"><a href="library.html"><img src="images/book_icon.fw.png" alt="BeAware Library" width="34" class="opaque-rollover" /></a></div>
+            
+        <div class="quick_top_icon" id="posters"><a href="posters.html"><img src="images/poster_icon.fw.png" alt="BeAware Posters"  width="20" class="opaque-rollover" /></a></div>
+            
+        <div class="quick_top_icon" id="facebook"><a href="https://www.facebook.com/pages/Awarenessdriveorg/581286078548981" target="_blank"><img src="images/facebook_icon.fw.png" alt="Facebook AwarenessDrive.org" width="34" class="opaque-rollover" /></a></div> 
+      </div>
+      
+                  <div class="slogan"><img src="images/Headline_BeAware.gif" alt="BeAware of Zombie Emotions" width="404" height="38" /></div>
+      
+	</div> 
+</div>
+
+
+
+<div id="sidebar">
+    <div id="scroller_anchor"></div>
+    	<div class="nav" id="scroller">
+        
+                <div class="com"><span class="red">AWARENESS</span><span class="grey">drive</span><span class="white">.org</span></div>
+        	<div class="navWrapper">
+        
+                <div class="linkWrapper"><div class="link" id="link1"><a href="index.html">Home</a></div></div>
+               
+               <div class="linkWrapper"><div class="link2"  id="link2" style="visiblity:'visible'">
+               		<a href="blog.html" style="margin-top: 3px; font-size: 140%;">BeAware</a>
+               <div class="drop" id="drop">
+                   <div class="sub1" onclick="location.href='blog.html';"><a href="blog.html">BeAware Blog</a></div>
+                    <div class="sub2" onclick="location.href='library.html';"><a href="library.html">BeAware Library</a></div>
+               </div>
+               </div></div>
+               
+               <div class="linkWrapper"><div class="link"  id="link3"><a href="links.html">Links</a></div></div>
+               
+               <div class="linkWrapper"><div class="link"  id="link4"><a href="events.html">Events</a></div></div>
+               
+               <div class="linkWrapper"><div class="link"  id="link5"><a href="about.html">About</a></div></div>
+               
+               <div class="linkWrapper"><div class="link"  id="link6"><a href="contact.php">Contact</a></div>
+               
+            </div>
+        </div>
+    </div> 
+</div>
+
+
+
+
+
+
+
 <?php
 
 // Set email variables
@@ -64,221 +187,6 @@ function remove_email_injection($field = FALSE) {
 }
 
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-<link rel="stylesheet" type="text/css" href="css/base_styles.css" />
-<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-
-<script src="js/jquery-1.9.0.min.js" type="text/javascript"></script>
-<script src="js/jquery-ui-1.10.0.custom.min.js" type="text/javascript"></script>
-<script src="js/navani.js" type="text/javascript"></script>
-
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>AwarenessDrive.org - Contact</title>
-<style type="text/css">
-body{
-	background-image:url(images/low_contrast_linen.png);	
-	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
-}
-.buttons {
-	border:0px;
-}
-.information{
-	position:relative;
-	margin:0px auto;
-	color:#FFF;
-	width:720px;
-	font-size:15px;	
-}
-.contactWrapper{
-	position:relative;
-	margin:100px auto;
-	width:1400px;
-	height:auto;	
-	overflow:hidden;
-}
-#formWrap{
-	width:720px;
-	margin:5px;
-	float:left;
-	color:#fff;
-	border:2px solid #fff;
-	border-radius:10px;
-	background-color:#000;
-	-moz-border-radius:10px;
-	-moz-box-shadow:0px 0px 10px #333333;
-	text-shadow:1px 1px 1px #000;
-	-webkit-text-shadow:1px 1px 1px #000;
-	-moz-text-shadow:1px 1px 1px #000;
-	box-shadow:0px 0px 10px #fff;
-	-webkit-box-shadow: 0px 0px 15px #fff;
-	-moz-box-shadow:0px 0px 15px #fff;
-	padding:16px 20px 40px;
-}
-
-#formWrap #form{
-	width:720px;
-}
-
-#form .row{
-	border-bottom:1px dotted #eee;
-	display:block;
-	line-height:38px;
-	overflow:auto;
-	padding:24px 0px;
-	width:100%;
-	
-}
-
-#form .row .label{
-	font-size:16px;
-	font-weight:bold;
-	font-family:Arial, Helvetica, sans-serif;
-	width:150px;
-	color:#f82639;
-	text-align:right;
-	float:left;
-	padding-right:10px;
-	margin-right:10px;
-}
-
-#form .row .input{
-	float:left;
-	margin-right:10px;
-	width:auto;
-}
-
-.detail{
-	width: 260px;
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:20px;
-	padding: 7px 8px;
-	margin:0px;	
-	display:block;
-}
-.mess{
-	width:450px;
-	max-width:450px;
-	height:280px;	
-	overflow:auto;
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:20px;
-	padding: 7px 8px;
-	line-height:1em;
-	margin:0px;
-	display:block;
-}
-
-#form .row .context{
-	color:#999;
-	font-size:11px;
-	font-style:italic;
-	line-height:14px;
-	font-family:Arial, Helvetica, sans-serif;
-	width:200px;
-	float:left;	
-}
-
-#form #submit{
-	font-family:Arial, Helvetica, sans-serif;
-	margin-top: 25px;
-	margin-left:170px;
-	color:#000;
-	font-size:16px;
-	text-shadow:1px 1px 1px #999;
-	padding:10px;
-}
-
-span.error{
-	display:block;
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:12px;
-	background-image:url(images/x.png);
-	background-position: left 6px;
-	background-repeat: no-repeat;
-	color:#F82639;
-	padding-left:30px;
-}
-
-.info{
-	position:relative;
-	margin:10px;
-	float:right;
-	width:500px;
-	height:500px;
-	text-shadow:1px 1px 1px #000;
-	-webkit-text-shadow:1px 1px 1px #000;
-	-moz-text-shadow:1px 1px 1px #000;	
-}
-.redLink{
-	color:#F82639;	
-}
-
-</style>
-</head>
-<body>
-
-
-<div class="headWrapper">
-
-	<div class="logo"><a href="index.html"><img src="images/Header1_750.gif" alt="AwarenessDrive.org" width="570"/></a> </div>
-    
-    <div class="right">
-
-
-      <div class="quick_top">
-            <div class="quick_top_icon" id="twitter"><a href="https://twitter.com/awarenessdrive" target="_blank"><img src="images/twitter_icon.fw.png" alt="Twitter AwarenessDrive.org" width="34" class="opaque-rollover" /></a></div>
-            
-        <div class="quick_top_icon" id="blog"><a href="blog.html"><img src="images/blog_icon.fw.png" alt="BeAware Blog" width="34" class="opaque-rollover" /></a></div>
-            
-        <div class="quick_top_icon" id="books"><a href="library.html"><img src="images/book_icon.fw.png" alt="BeAware Library" width="34" class="opaque-rollover" /></a></div>
-            
-        <div class="quick_top_icon" id="posters"><a href="posters.html"><img src="images/poster_icon.fw.png" alt="BeAware Posters"  width="20" class="opaque-rollover" /></a></div>
-            
-        <div class="quick_top_icon" id="facebook"><a href="https://www.facebook.com/pages/Awarenessdriveorg/581286078548981" target="_blank"><img src="images/facebook_icon.fw.png" alt="Facebook AwarenessDrive.org" width="34" class="opaque-rollover" /></a></div> 
-      </div>
-      
-                  <div class="slogan"><img src="images/Headline_BeAware.gif" alt="BeAware of Zombie Emotions" width="404" height="38" /></div>
-      
-	</div> 
-</div>
-
-
-
-<div id="sidebar">
-    <div id="scroller_anchor"></div>
-    	<div class="nav" id="scroller">
-        
-                <div class="com"><span class="red">AWARENESS</span><span class="grey">drive</span><span class="white">.org</span></div>
-        	<div class="navWrapper">
-        
-                <div class="linkWrapper"><div class="link" id="link1"><a href="index.html">Home</a></div></div>
-               
-               <div class="linkWrapper"><div class="link2"  id="link2" style="visiblity:'visible'"><a href="blog.html">BeAware</a>
-               <div class="drop" id="drop">
-                   <div class="sub1" onclick="location.href='blog.html';"><a href="blog.html">BeAware Blog</a></div>
-                    <div class="sub2" onclick="location.href='library.html';"><a href="library.html">BeAware Library</a></div>
-               </div>
-               </div></div>
-               
-               <div class="linkWrapper"><div class="link"  id="link3"><a href="links.html">Links</a></div></div>
-               
-               <div class="linkWrapper"><div class="link"  id="link4"><a href="events.html">Events</a></div></div>
-               
-               <div class="linkWrapper"><div class="link"  id="link5"><a href="about.html">About</a></div></div>
-               
-               <div class="linkWrapper"><div class="link"  id="link6"><a href="contact.php">Contact</a></div>
-               
-            </div>
-        </div>
-    </div> 
-</div>
-
-
-
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/mootools/1.3.0/mootools-yui-compressed.js"></script>
     
@@ -378,6 +286,7 @@ Challenges we've not addressed here (yet) that we can help you or others.</li>
 
 
 
+
 <div class="icon_wrapper">
 <a href="https://twitter.com/awarenessdrive" target="_blank" class=" icon_section opaque-rollover" style="display:block; height:200px; width:180px; text-align:center;">
 <img src="images/twitter_icon.fw.png" alt="Twitter AwarenessDrive.org" height="40" style="display:block; margin:0px auto;" />
@@ -409,7 +318,6 @@ AwarenessDrive BeAware posters.
 &quot;Like&quot; us on Facebook and read about current  events and upcoming projects.
 </a>
 <br/>
-</div>
 </div>
 
 
