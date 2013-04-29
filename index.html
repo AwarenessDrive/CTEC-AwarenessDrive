@@ -67,18 +67,18 @@ right{
 
 
       <div class="quick_top">
-            <div class="quick_top_icon" id="twitter"><a href="https://twitter.com/awarenessdrive" target="_blank"><img src="images/twitter_icon.fw.png" alt="Twitter AwarenessDrive.org" width="34" class="opaque-rollover" /></a></div>
-            
         <div class="quick_top_icon" id="blog"><a href="blog.html"><img src="images/blog_icon.fw.png" alt="BeAware Blog" width="34" class="opaque-rollover" /></a></div>
             
         <div class="quick_top_icon" id="books"><a href="library.html"><img src="images/book_icon.fw.png" alt="BeAware Library" width="34" class="opaque-rollover" /></a></div>
             
         <div class="quick_top_icon" id="posters"><a href="posters.html"><img src="images/poster_icon.fw.png" alt="BeAware Posters"  width="20" class="opaque-rollover" /></a></div>
+        <div class="quick_top_icon" id="twitter"><a href="https://twitter.com/awarenessdrive" target="_blank"><img src="images/twitter_icon.fw.png" alt="Twitter AwarenessDrive.org" width="34" class="opaque-rollover" /></a></div>
+            
             
         <div class="quick_top_icon" id="facebook"><a href="https://www.facebook.com/pages/Awarenessdriveorg/581286078548981" target="_blank"><img src="images/facebook_icon.fw.png" alt="Facebook AwarenessDrive.org" width="34" class="opaque-rollover" /></a></div> 
       </div>
       
-                  <div class="slogan"><img src="images/Headline_BeAware.gif" alt="BeAware of Zombie Emotions" width="404" height="38" /></div>
+                  <div class="slogan"><img src="images/BeAwareOfZombieEmotions.png" alt="BeAware of Zombie Emotions" width="475"  /></div>
       
 	</div> 
 </div>

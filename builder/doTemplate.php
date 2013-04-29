@@ -55,11 +55,16 @@ function buildFromTemplate($templateFileName, $breakString, $baseFileName, $outF
 	}
 }
 
-
+$templateFileName = $baseDir . $templateFileName;
+$mTime = filemtime($templateFileName);
 foreach ($fileList as $index => $target) {
 	// 	echo $index ."=>" . print_r($target) . "\n";
-	buildFromTemplate($baseDir . $templateFileName, 'TEMPLATE_BREAK', 
-		$sourceDir . $target['base'], $baseDir . $target['outfile'], $target['title']);
+	if ($mTime != filemtime($sourceDir . $target['base'])) {
+		echo  "updating $index\n";
+		touch($sourceDir . $target['base'], $mTime);
+		buildFromTemplate($templateFileName, 'TEMPLATE_BREAK', 
+			$sourceDir . $target['base'], $baseDir . $target['outfile'], $target['title']);
+	} 
 	//	echo  $target=>base . "\n";
 }
 exit;
